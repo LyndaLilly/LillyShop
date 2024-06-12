@@ -1,0 +1,182 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LillyShop</title>
+   <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+   <header class="header">
+
+      <section class="flex">
+   
+         <a href="home.php" class="logo"><img src="images/logo2.png" alt="" width="150"><span></span></a>
+   
+         <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="about.html">about</a>
+            <a href="">orders</a>
+            <a href="shop.html">shop</a>
+            <a href="contact.html">contact</a>
+         </nav>
+   
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-heart"></i><span>0</span></a>
+            <a href=""><i class="fas fa-shopping-cart"></i><span>0</span></a>
+            <div id="user-btn" class="fas fa-user"></div>
+         </div>
+   
+         <div class="profile">
+      
+            <p>LYNDA</p>
+            <a href="" class="btn">update profile</a>
+            <div class="flex-btn">
+               <a href="user_register.html" class="option-btn">register</a>
+               <a href="user_login.html" class="option-btn">login</a>
+            </div>
+            <a href="" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a> 
+          
+      
+           
+            
+            
+         </div>
+   
+      </section>
+   
+   </header>
+<div class="home-bg">
+
+   <section class="home">
+
+      <div class="swiper home-slider">
+      
+      <div class="swiper-wrapper">
+   
+         <div class="swiper-slide slide">
+           
+            <div class="image">
+            <img src="images/home-img-2.png" alt="">
+            </div>
+            <div class="content">
+               <span style="font-size:40px">Welcome to LillyShop!</span>
+               <p style="font-size:15px; color: white; line-height: 3rem; text-align:justify"> At LillyShop, we’re passionate about providing a seamless and enjoyable shopping experience for our valued customers. Whether you’re browsing for the latest trends, searching for the perfect gift, or simply indulging in some retail therapy, our platform is designed to cater to your every need. Our motto, "Stay True to You," reflects our commitment to offering a personalized shopping experience that respects and celebrates your individuality.
+   
+               Welcome to the future of online shopping. Welcome to LillyShop!</p>
+               <a href="shop.php" class="btn">shop now</a>
+            </div>
+         </div>
+   
+         <div class="swiper-slide slide">
+            <div class="image">
+            <img src="images/home-img-1.png" alt="">
+            </div>
+            <div class="content">
+               <span>Get discount</span>
+               <h3>latest watches</h3>
+               <a href="shop.php" class="btn">shop now</a>
+            </div>
+         </div>
+   
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/home-img-3.png" alt="">
+            </div>
+            <div class="content">
+               <span>Shop and Smile</span>
+               <h3>latest headsets</h3>
+               <a href="shop.php" class="btn">shop now</a>
+            </div>
+         </div>
+   
+      </div>
+   
+         <div class="swiper-pagination"></div>
+   
+      </div>
+   
+   </section>
+
+</div>
+
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   spaceBetween: 20,
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    },
+});
+
+ var swiper = new Swiper(".category-slider", {
+   loop:true,
+   spaceBetween: 20,
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+   breakpoints: {
+      0: {
+         slidesPerView: 2,
+       },
+      650: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 5,
+      },
+   },
+});
+
+var swiper = new Swiper(".products-slider", {
+   loop:true,
+   spaceBetween: 20,
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+   breakpoints: {
+      550: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+   },
+});
+
+</script>
+
+</body>
+</html>
