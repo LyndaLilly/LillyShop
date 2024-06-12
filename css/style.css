@@ -233,7 +233,7 @@ section{
 }
 
 .home-bg{
-   background:url(../images/home-bg.png) no-repeat;
+   background:linear-gradient(rgba(255, 0, 149, 0.836), rgba(255, 106, 0, 0.751), rgba(255, 8, 0, 0.527)),url(../images/head.jpg) no-repeat;
    background-size: cover;
    background-position: center;
 }
